@@ -3,11 +3,11 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
-    background-size: cover;
+	background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+	background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: "Lato";
 }
 
 .icon {
@@ -55,7 +55,11 @@ body {
     border: 1px solid black !important;
 }
 
-/* -------------------------------- Media Queries */
+.bg-black {
+    background: #000 !important;
+}
+
+/* Media queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -64,7 +68,7 @@ body {
   }
 }
 
-/* fixed top navbar only on medium and up */
+/* Fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
