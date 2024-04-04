@@ -1,0 +1,74 @@
+[
+    {
+      "pk": 1,
+      "model": "products.category",
+      "fields": {
+        "name": "upper_body",
+        "friendly_name": "Upper Body"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.category",
+      "fields": {
+        "name": "lower_body",
+        "friendly_name": "Lower Body"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.category",
+      "fields": {
+        "name": "other",
+        "friendly_name": "Other"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.category",
+      "fields": {
+        "name": "equipment",
+        "friendly_name": "Equipment"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.category",
+      "fields": {
+        "name": "protein",
+        "friendly_name": "Protein"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.category",
+      "fields": {
+        "name": "accessories",
+        "friendly_name": "Accessories"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.category",
+      "fields": {
+        "name": "fit_freak_basic",
+        "friendly_name": "Fit Freak Basic"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.category",
+      "fields": {
+        "name": "fit_freak_plus",
+        "friendly_name": "Fit Freak Plus"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.category",
+      "fields": {
+        "name": "fit_freak_star",
+        "friendly_name": "Fit Freak Star"
+      }
+    }
+  ]

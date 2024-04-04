@@ -1,0 +1,324 @@
+[
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000002",
+      "name": "Bucket Hat",
+      "description": "Stay cool and stylish with our Fitness Freak Bucket Hat. Perfect for outdoor workouts or casual wear. Made from durable materials to withstand any activity.",
+      "price": 14.99,
+      "category": 3,
+      "rating": 4.32,
+      "image_url": "/media/bucket-hat-context.png",
+      "image": "bucket-hat-context.png"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000003",
+      "name": "Frisbee",
+      "description": "Add fun to your fitness routine with our Fitness Freak Frisbee. Great for outdoor exercises and recreational activities with friends and family.",
+      "price": 9.99,
+      "category": 4,
+      "rating": 4.56,
+      "image_url": "/media/frisbee-context.png",
+      "image": "frisbee-context.png"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000004",
+      "name": "Gym Shorts",
+      "description": "Achieve your fitness goals in comfort and style with our Fitness Freak Gym Shorts. Designed for flexibility and breathability during workouts.",
+      "price": 21.99,
+      "category": 2,
+      "rating": 4.89,
+      "image_url": "/media/gym-shorts-context.png",
+      "image": "gym-shorts-context.png"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000005",
+      "name": "Gym Towel",
+      "description": "Stay dry and focused during workouts with our Fitness Freak Gym Towel. Absorbent and quick-drying, it's the perfect companion for your fitness journey.",
+      "price": 18.99,
+      "category": 6,
+      "rating": 3.97,
+      "image_url": "/media/gym-towel-context.png",
+      "image": "gym-towel-context.png"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000006",
+      "name": "Mobile Phone Case",
+      "description": "Protect your phone during workouts with our Fitness Freak Mobile Phone Case. Designed for durability and functionality, so you can focus on your fitness.",
+      "price": 35.99,
+      "category": 6,
+      "rating": 4.67,
+      "image_url": "/media/mobile-phone-context.png",
+      "image": "mobile-phone-context.png"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000007",
+      "name": "Sports Shorts",
+      "description": "Enhance your performance with our Fitness Freak Sports Shorts. Engineered for comfort and flexibility, allowing you to move freely during any activity.",
+      "price": 17.99,
+      "category": 2,
+      "rating": 4.32,
+      "image_url": "/media/sports-shorts-context.png",
+      "image": "sports-shorts-context.png"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000008",
+      "name": "Sports Socks",
+      "description": "Maximize comfort and support during workouts with our Fitness Freak Sports Socks. Designed to keep your feet dry and blister-free, so you can focus on your performance.",
+      "price": 7.99,
+      "category": 2,
+      "rating": 4.81,
+      "image_url": "/media/sports-sock-context.png",
+      "image": "sports-sock-context.png"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000009",
+      "name": "Sports Top Cropped",
+      "description": "Achieve a stylish and supportive look with our Fitness Freak Sports Top Cropped. Designed to provide comfort and confidence during your workouts.",
+      "price": 12.99,
+      "category": 1,
+      "rating": 4.78,
+      "image_url": "/media/sports-top-context.png",
+      "image": "sports-top-context.png"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000010",
+      "name": "Tank Top",
+      "description": "Stay cool and comfortable during workouts with our Fitness Freak Tank Top. Designed for maximum breathability and freedom of movement.",
+      "price": 15.99,
+      "category": 1,
+      "rating": 4.59,
+      "image_url": "/media/tank-top-context.png",
+      "image": "tank-top-context.png"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000011",
+      "name": "Toiletry Bag",
+      "description": "Organize your essentials with our Fitness Freak Toiletry Bag. Perfect for gym visits or travel, keeping your belongings secure and accessible.",
+      "price": 29.99,
+      "category": 6,
+      "rating": 4.94,
+      "image_url": "/media/toiletry-context.png",
+      "image": "toiletry-context.png"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000012",
+      "name": "Warmup Hoodie",
+      "description": "Stay warm and focused with our Fitness Freak Warmup Hoodie. Designed for pre-workout routines or casual wear, providing both comfort and style.",
+      "price": 41.99,
+      "category": 1,
+      "rating": 4.82,
+      "image_url": "/media/warmup-hoodie-context.png",
+      "image": "warmup-hoodie-context.png"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000013",
+      "name": "Water Bottle",
+      "description": "Stay hydrated on the go with our Fitness Freak Water Bottle. Leak-proof and durable, it's the perfect companion for any workout or outdoor activity.",
+      "price": 27.99,
+      "category": 4,
+      "rating": 4.42,
+      "image_url": "/media/water-bottle-context.png",
+      "image": "water-bottle-context.png"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000014",
+      "name": "Yoga Mat",
+      "description": "Find your balance with our Fitness Freak Yoga Mat. Designed for comfort and stability, allowing you to focus on your practice and enhance your flexibility.",
+      "price": 11.99,
+      "category": 4,
+      "rating": 4.12,
+      "image_url": "/media/yoga-mat-context.png",
+      "image": "yoga-mat-context.png"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000015",
+      "name": "Dumbbell",
+      "description": "Build strength and muscle with our Fitness Freak Dumbbell. Versatile and durable, perfect for a wide range of exercises to achieve your fitness goals.",
+      "price": 45.99,
+      "category": 4,
+      "rating": 4.76,
+      "image_url": "/media/dumbbell-context.png",
+      "image": "dumbbell-context.png"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000016",
+      "name": "Protein Powder (Chocolate)",
+      "description": "Refuel your body with our Fitness Freak Chocolate Protein Powder. Delicious and nutritious, it's the perfect post-workout supplement to support muscle recovery.",
+      "price": 17.99,
+      "category": 5,
+      "rating": 3.41,
+      "image_url": "/media/protein-choc-context.png",
+      "image": "protein-choc-context.png"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000017",
+      "name": "Protein Powder (Strawberry)",
+      "description": "Indulge in our Fitness Freak Strawberry Protein Powder. Packed with flavor and essential nutrients, it's the perfect way to satisfy your post-workout cravings.",
+      "price": 17.99,
+      "category": 5,
+      "rating": 3.83,
+      "image_url": "/media/protein-straw-context.png",
+      "image": "protein-straw-context.png"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000018",
+      "name": "Protein Powder (Vanilla)",
+      "description": "Enjoy our Fitness Freak Vanilla Protein Powder. Smooth and creamy, it's a delicious way to replenish your energy stores after a tough workout.",
+      "price": 17.99,
+      "category": 5,
+      "rating": 2.43,
+      "image_url": "/media/protein-van-context.png",
+      "image": "protein-van-context.png"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000019",
+      "name": "Protein Shaker",
+      "description": "Mix your protein shakes with ease using our Fitness Freak Protein Shaker. Convenient and leak-proof, perfect for on-the-go nutrition.",
+      "price": 19.99,
+      "category": 5,
+      "rating": 4.70,
+      "image_url": "/media/protein-shaker-context.png",
+      "image": "protein-shaker-context.png"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000020",
+      "name": "Neck Warmer",
+      "description": "Stay warm and cozy during outdoor workouts with our Fitness Freak Neck Warmer. Soft and insulated, it provides protection against chilly weather.",
+      "price": 20.99,
+      "category": 3,
+      "rating": 4.69,
+      "image_url": "/media/neck-warmer-context.png",
+      "image": "neck-warmer-context.png"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000021",
+      "name": "Flip Flops",
+      "description": "Relax post-workout with our Fitness Freak Flip Flops. Lightweight and comfortable, perfect for slipping on after a long session at the gym or by the pool.",
+      "price": 12.99,
+      "category": 2,
+      "rating": 4.44,
+      "image_url": "/media/sliders-context.png",
+      "image": "sliders-context.png"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000022",
+      "name": "Fit Freak Basic Plan",
+      "description": "Start your fitness journey with our Fitness Freak Basic Plan. Tailored workouts and nutrition guidance to help you reach your goals.",
+      "price": 49.99,
+      "category": 7,
+      "rating": 4.77,
+      "image_url": "/media/basic-plan-context.png",
+      "image": "basic-plan-context.png"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000023",
+      "name": "Fit Freak Plus Plan",
+      "description": "Take your fitness to the next level with our Fitness Freak Plus Plan. Personalized coaching and advanced training programs for optimal results.",
+      "price": 99.99,
+      "category": 8,
+      "rating": 4.86,
+      "image_url": "/media/plus-plan-context.png",
+      "image": "plus-plan-context.png"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000024",
+      "name": "Fit Freak Star Plan",
+      "description": "Unleash your full potential with our Fitness Freak Star Plan. Elite coaching and premium features to achieve peak performance.",
+      "price": 179.99,
+      "category": 9,
+      "rating": 5.00,
+      "image_url": "/media/star-plan-context.png",
+      "image": "star-plan-context.png"
+    }
+  }
+]
