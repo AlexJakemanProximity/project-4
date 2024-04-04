@@ -33,13 +33,12 @@
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
           <a href="{% url 'home' %}" class="nav-link main-logo-link">
             <h2 class="logo-font text-black my-0">
-              {% comment %} <strong>Fit Freak</strong> {% endcomment %}
               <img src="/media/fit_freak_logo_cropped.png" style="width: 150px; height: auto;">
             </h2>
           </a>
         </div>
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-          <form method="GET" action="">
+          <form method="GET" action="{% url 'products' %}">
             <div class="input-group w-100">
                 <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
                 <div class="input-group-append">
