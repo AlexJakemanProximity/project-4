@@ -64,6 +64,16 @@ body {
     color: #111111;
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #edcd1d;
+    z-index: -1;
+}
+
 /* Media queries */
 
 /* Slightly larger container on xl screens */
