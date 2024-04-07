@@ -96,7 +96,6 @@ a.category-badge > span.badge:hover {
 }
 
 /* Media queries */
-
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
   .container {
