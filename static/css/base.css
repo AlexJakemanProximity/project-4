@@ -37,16 +37,30 @@ body {
     color: #edcd1d;
 }
 
-.product-details-container, .basket-details-container {
-    background: #fff !important;
-    padding: 5px;
-    margin-top: 5px;
-}
-
 .btn-outline-black {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+    border: 2px solid black;
+}
+
+.product-details-container, .basket-details-container {
+    border: 2px solid #111111 !important;
+    background: #fff !important;
+    padding: 5px;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.basket-details-container {
+    margin-bottom: 20px;
+}
+
+.image-container, .h-100 {
+    border: 2px solid #111111 !important;
+}
+
+.h-100 a img {
+    border-bottom: 2px solid #111111 !important;
 }
 
 .btn-outline-black:hover,
