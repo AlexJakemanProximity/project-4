@@ -55,7 +55,16 @@ body {
     margin-bottom: 20px;
 }
 
-.image-container, .h-100 {
+.saleline {
+    border-top: 1px solid #111111 !important;
+    border-bottom: 1px solid #111111 !important;
+}
+
+.col .mb-4 {
+    text-align: center;
+}
+
+.card, .pdp-img {
     border: 2px solid #111111 !important;
 }
 
@@ -99,6 +108,10 @@ body {
 .dropdown-item, .dropdown-menu {
     background: #edcd1d;
     color: #111111;
+}
+
+.dropdown-menu {
+    border: 1px solid #111111 !important;
 }
 
 .overlay {
@@ -149,6 +162,10 @@ a.category-badge > span.badge:hover {
     .header-container {
         padding-top: 164px;
     }
+
+    .mobile-header-btn {
+        visibility: hidden;
+    }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
@@ -162,9 +179,36 @@ a.category-badge > span.badge:hover {
     }
 }
 
+@media (max-width: 575px) {
+    .basket-details-container {
+        border: 2px solid #111111 !important;
+        background: #fff !important;
+        padding: 5px;
+        padding-left: 10px;
+        margin-top: 20px;
+        margin: 20px;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 412px) {
+    .navbar ul list-inline-item {
+        width: 45px;
+        height: auto;
+    }
+
+    .header-container {
+        padding-top: 145px;
+    }
+}
+
+
 @media (max-width: 500px) {
-    .logo-font {
-        font-size: 75%;
+    .col .my-1 {
+        font-size: 85%;
     }
     
     /* .my-0 {
