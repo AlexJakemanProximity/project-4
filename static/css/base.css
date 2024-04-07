@@ -37,6 +37,12 @@ body {
     color: #edcd1d;
 }
 
+.product-details-container, .basket-details-container {
+    background: #fff !important;
+    padding: 5px;
+    margin-top: 5px;
+}
+
 .btn-outline-black {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
