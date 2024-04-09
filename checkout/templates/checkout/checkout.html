@@ -26,7 +26,7 @@
         </div>
 
         <div class="row">
-            <div class="col-12 col-lg-6 order-lg-last mb-5">
+            <div class="col-12 col-lg-6 order-lg-last mb-5 checkout-summary-ocontainer">
                 <p class="text-muted">Order Summary ({{ product_count }})</p>
                 <div class="row">
                     <div class="col-7 offset-2">
@@ -71,17 +71,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 text-left checkout-details-ocontainer">
                 <p class="text-muted">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
+                        <legend class="fieldset-label small px-2 w-auto">Details</legend>
                         {{ order_form.full_name }}
                         {{ order_form.email }}
                     </fieldset>
+                    {% comment %} <fieldset class="rounded px-3 mb-5"> {% endcomment %}
+                        {% comment %} <legend class="fieldset-label small px-2 w-auto">Delivery</legend> {% endcomment %}
                     <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Delivery</legend>
+                        <legend class="small w-auto alex-input">Delivery</legend>
                         {{ order_form.phone_number }}
                         {{ order_form.country }}
                         {{ order_form.postcode }}
@@ -89,7 +91,7 @@
                         {{ order_form.street_address1 }}
                         {{ order_form.street_address2 }}
                         {{ order_form.county }}
-                        <div class="form-check form-check-inline float-right mr-0">
+                        <div class="form-check float-center mr-0">
 							{% if user.is_authenticated %}
 								<label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
                                 <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
@@ -110,14 +112,14 @@
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                     </fieldset>
 
-                    <div class="submit-button text-right mt-5 mb-2">                    
-						<a href="{% url 'view_bag' %}" class="btn btn-black rounded-0">
+                    <div class="submit-button text-center mt-5 mb-2">                    
+						<a href="{% url 'view_bag' %}" class="btn btn-black-checkout rounded-0">
 							<span class="icon">
 								<i class="fas fa-chevron-left"></i>
 							</span>
 							<span class="font-weight-bold">Adjust Bag</span>
 						</a>
-						<button id="submit-button" class="btn btn-black rounded-0">
+						<button id="submit-button" class="btn btn-black-checkout rounded-0">
 							<span class="font-weight-bold">Complete Order</span>
 							<span class="icon">
 								<i class="fas fa-lock"></i>

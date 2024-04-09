@@ -1,0 +1,41 @@
+.checkout-summary-ocontainer {
+    border: 2px solid #111111 !important;
+    background: #fff !important;
+    padding: 5px;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.checkout-details-ocontainer {
+    border: 2px solid #111111 !important;
+    background: #111111 !important;
+    color: #fff !important;
+    padding: 5px;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.stripe-style-input {
+    max-width: 200px;
+    min-height: 40px;
+    padding: 5px;
+    outline: none;
+    background: #fff;
+    color: #111;
+    border: none;
+    /* border-radius: 10px; */
+    transition: all .5s;
+    margin-bottom: 5px;
+}
+
+.stripe-style-input:focus {
+    color: #111111 !important;
+    background: #edcd1d;
+    box-shadow: inset 5px 5px 17px #edcd1d,
+              inset -5px -5px 17px #edcd1d;
+}
+
+.btn-black-checkout {
+    background: #edcd1d;
+    color: #111;
+}
