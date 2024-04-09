@@ -37,6 +37,7 @@
                     </div>
                 </div>
                 {% for item in bag_items %}
+                    <hr>
                     <div class="row">
                         <div class="col-2 mb-1">
                             <a href="{% url 'product_detail' item.product.id %}">
@@ -83,7 +84,7 @@
                     {% comment %} <fieldset class="rounded px-3 mb-5"> {% endcomment %}
                         {% comment %} <legend class="fieldset-label small px-2 w-auto">Delivery</legend> {% endcomment %}
                     <fieldset class="rounded px-3 mb-5">
-                        <legend class="small w-auto">Delivery</legend>
+                        <legend class="fieldset-label small px-2 w-auto">Delivery</legend>
                         {{ order_form.phone_number }}
                         {{ order_form.country }}
                         {{ order_form.postcode }}
