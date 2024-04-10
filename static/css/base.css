@@ -216,9 +216,14 @@ a.category-badge > span.badge:hover {
 /* Media queries */
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
+
+  .mobile-header-btn, #mobile-fit-freak-nav {
+    visibility: hidden;
+    display: none;
+    }
 }
 
 /* Fixed top navbar only on medium and up */
@@ -230,13 +235,14 @@ a.category-badge > span.badge:hover {
         left: 0;
         z-index: 1030;
     }
-
+    
     .header-container {
         padding-top: 164px;
     }
 
-    .mobile-header-btn {
+    .mobile-header-btn , #mobile-fit-freak-nav {
         visibility: hidden;
+        display: none;
     }
 }
 
