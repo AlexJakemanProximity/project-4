@@ -39,7 +39,7 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important;
     border: 2px solid black;
 }
 
@@ -278,13 +278,4 @@ a.category-badge > span.badge:hover {
     .col .my-1 {
         font-size: 85%;
     }
-    
-    /* .my-0 {
-        visibility: hidden;
-    } */
-
-    /* .list-inline-item {
-        max-width: 60px;
-        height: auto;
-    } */
 }

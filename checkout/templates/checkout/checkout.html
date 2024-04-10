@@ -26,7 +26,7 @@
         </div>
 
         <div class="row">
-            <div class="col-12 col-lg-6 order-lg-last mb-5 checkout-summary-ocontainer">
+            <div class="col mb-5 checkout-summary-container">
                 <p class="text-muted">Order Summary ({{ product_count }})</p>
                 <div class="row">
                     <div class="col-7 offset-2">
@@ -72,7 +72,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 text-left checkout-details-ocontainer">
+            <div class=" text-left checkout-details-container">
                 <p class="text-muted">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
@@ -84,14 +84,14 @@
                     {% comment %} <fieldset class="rounded px-3 mb-5"> {% endcomment %}
                         {% comment %} <legend class="fieldset-label small px-2 w-auto">Delivery</legend> {% endcomment %}
                     <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small px-2 w-auto">Delivery</legend>
+                        <legend class="fieldset-label mb-3 small px-2">Delivery</legend>
                         {{ order_form.phone_number }}
-                        {{ order_form.country }}
-                        {{ order_form.postcode }}
-                        {{ order_form.town_or_city }}
                         {{ order_form.street_address1 }}
                         {{ order_form.street_address2 }}
+                        {{ order_form.town_or_city }}
                         {{ order_form.county }}
+                        {{ order_form.postcode }}
+                        {{ order_form.country }}
                         <div class="form-check float-center mr-0">
 							{% if user.is_authenticated %}
 								<label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>

@@ -1,16 +1,26 @@
-.checkout-summary-ocontainer {
+.checkout-summary-container {
     border: 2px solid #111111 !important;
     background: #fff !important;
     padding: 5px;
     padding-left: 10px;
     margin-top: 5px;
+    margin: 20px;
 }
 
-.checkout-summary-ocontainer img {
+.checkout-summary-container img {
     border: 1px solid #111 !important;
 }
 
-.checkout-details-ocontainer {
+select, select option {
+    color: #111;
+}
+
+select:invalid, select option[value=""] {
+    color: #777774;
+}
+
+
+.checkout-details-container {
     border: 2px solid #111111 !important;
     background: #fff !important;
     color: #111 !important;
@@ -18,6 +28,7 @@
     padding-left: 10px;
     margin-top: 5px;
     margin-bottom: 20px;
+    margin: 20px;
 }
 
 .fieldset-label {
@@ -35,6 +46,7 @@
     border: 1px solid #111 !important;
     transition: all .5s;
     margin-bottom: 5px;
+    width: 90%;
 }
 
 .stripe-style-input:focus {
@@ -70,4 +82,10 @@
     justify-content: center;
     margin: 0;
     height: 100%;
+}
+
+@media (min-width: 900px) {
+    .stripe-style-input, .StripeElement {
+        width: 45% !important;
+    }
 }
