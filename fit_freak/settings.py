@@ -17,8 +17,7 @@ SECRET_KEY = 'django-insecure-4v=86d9@0gi9gbvk!7((z#e1$0m1a#p1s7*zs1)#(ptf$9rfq+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['fit-freak.herokuapp.com', 'localhost']
 
 # Application definition
 
@@ -103,12 +102,17 @@ WSGI_APPLICATION = 'fit_freak.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
