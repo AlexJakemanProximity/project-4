@@ -52,7 +52,6 @@ select:invalid, select option[value=""] {
 .stripe-style-input:focus {
     color: #edcd1d !important;
     background: #111;
-
 }
 
 .btn-black-checkout {
@@ -72,7 +71,7 @@ select:invalid, select option[value=""] {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(227, 153, 210, 0.85);
+    background: #111;
     z-index: 9999;
 }
 
