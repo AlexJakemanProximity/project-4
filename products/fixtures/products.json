@@ -320,5 +320,411 @@
       "image_url": "/media/star-plan-context.png",
       "image": "star-plan-context.png"
     }
+  },
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000025",
+      "name": "Babygrow",
+      "description": "Keep your little one cozy and comfortable with our Fitness Freak Babygrow. Made from soft and breathable materials for all-day wear.",
+      "price": 23.99,
+      "category": 1,
+      "rating": 4.73,
+      "image_url": "/media/babygrow-context.png",
+      "image": "babygrow-context.png"
+    }
+  },
+  {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000026",
+      "name": "Belt",
+      "description": "Complete your workout look with our Fitness Freak Belt. Made from durable materials for long-lasting performance and style.",
+      "price": 14.99,
+      "category": 2,
+      "rating": 4.12,
+      "image_url": "/media/belt-context.png",
+      "image": "belt-context.png"
+    }
+  },
+  {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000027",
+      "name": "Bikini Bottoms",
+      "description": "Hit the pool or beach in style with our Fitness Freak Bikini Bottoms. Comfortable and flattering, perfect for soaking up the sun.",
+      "price": 11.99,
+      "category": 2,
+      "rating": 4.39,
+      "image_url": "/media/bikini-bottoms-context.png",
+      "image": "bikini-bottoms-context.png"
+    }
+  },
+  {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000028",
+      "name": "Bikini Top",
+      "description": "Complete your beach look with our Fitness Freak Bikini Top. Supportive and stylish, perfect for lounging by the pool or catching waves.",
+      "price": 13.99,
+      "category": 1,
+      "rating": 4.61,
+      "image_url": "/media/bikini-top-context.png",
+      "image": "bikini-top-context.png"
+    }
+  },
+  {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000029",
+      "name": "Bikini Set",
+      "description": "Make a splash with our Fitness Freak Bikini Set. Matching top and bottom for a coordinated look, perfect for your next beach adventure.",
+      "price": 19.99,
+      "category": 1,
+      "rating": 4.92,
+      "image_url": "/media/bikini-set-context.png",
+      "image": "bikini-set-context.png"
+    }
+  },
+  {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000030",
+      "name": "Bottle Opener",
+      "description": "Open your favorite post-workout beverage with our Fitness Freak Bottle Opener. Compact and durable, perfect for any fitness enthusiast.",
+      "price": 5.99,
+      "category": 6,
+      "rating": 4.85,
+      "image_url": "/media/bottle-opener-context.png",
+      "image": "bottle-opener-context.png"
+    }
+  },
+  {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000031",
+      "name": "Boxers",
+      "description": "Upgrade your underwear collection with our Fitness Freak Boxers. Made from soft and breathable materials for all-day comfort.",
+      "price": 9.99,
+      "category": 2,
+      "rating": 4.68,
+      "image_url": "/media/boxers-context.png",
+      "image": "boxers-context.png"
+    }
+  },
+  {
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000032",
+      "name": "Clothing Pin",
+      "description": "Secure your workout gear with our Fitness Freak Clothing Pin. Durable and reliable, perfect for keeping everything in place during intense workouts.",
+      "price": 23.99,
+      "category": 6,
+      "rating": 4.73,
+      "image_url": "/media/clothing-pin-context.png",
+      "image": "clothing-pin-context.png"
+    }
+  },
+  {
+    "pk": 33,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000033",
+      "name": "Sport Coffee",
+      "description": "Fuel your workouts with our Fitness Freak Sport Coffee. Specially blended for optimal performance, providing a natural energy boost without the crash.",
+      "price": 32.99,
+      "category": 3,
+      "rating": 4.92,
+      "image_url": "/media/coffee-context.png",
+      "image": "coffee-context.png"
+    }
+  },
+  {
+    "pk": 34,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000034",
+      "name": "Coffee Mug",
+      "description": "Sip your favorite brew in style with our Fitness Freak Coffee Mug. Durable and insulated, perfect for keeping your drinks hot during chilly workouts.",
+      "price": 8.99,
+      "category": 3,
+      "rating": 4.24,
+      "image_url": "/media/coffee-mug-context.png",
+      "image": "coffee-mug-context.png"
+    }
+  },
+  {
+    "pk": 35,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000035",
+      "name": "Earphone Case",
+      "description": "Protect your earphones with our Fitness Freak Earphone Case. Compact and durable, perfect for storing your audio accessories while on the go.",
+      "price": 29.99,
+      "category": 6,
+      "rating": 4.73,
+      "image_url": "/media/earphone-case-context.png",
+      "image": "earphone-case-context.png"
+    }
+  },
+  {
+    "pk": 36,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000036",
+      "name": "Facemask",
+      "description": "Stay protected during workouts with our Fitness Freak Facemask. Breathable and comfortable, perfect for indoor and outdoor exercise.",
+      "price": 4.99,
+      "category": 1,
+      "rating": 4.06,
+      "image_url": "/media/face-mask-context.png",
+      "image": "face-mask-context.png"
+    }
+  },
+  {
+    "pk": 37,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000037",
+      "name": "Light Scarf",
+      "description": "Add a layer of warmth with our Fitness Freak Light Scarf. Soft and cozy, perfect for chilly outdoor workouts or casual wear.",
+      "price": 12.99,
+      "category": 1,
+      "rating": 4.51,
+      "image_url": "/media/light-scarf-context.png",
+      "image": "light-scarf-context.png"
+    }
+  },
+  {
+    "pk": 38,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000038",
+      "name": "Lunch Box",
+      "description": "Pack your post-workout meals with our Fitness Freak Lunch Box. Leak-proof and durable, perfect for keeping your food fresh and organized.",
+      "price": 16.99,
+      "category": 4,
+      "rating": 3.87,
+      "image_url": "/media/lunch-box-context.png",
+      "image": "lunch-box-context.png"
+    }
+  },
+  {
+    "pk": 39,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000039",
+      "name": "Necklace",
+      "description": "Accessorize your workout look with our Fitness Freak Necklace. Stylish and versatile, it's the perfect finishing touch to any outfit.",
+      "price": 74.99,
+      "category": 6,
+      "rating": 4.98,
+      "image_url": "/media/necklace-context.png",
+      "image": "necklace-context.png"
+    }
+  },
+  {
+    "pk": 40,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000040",
+      "name": "Necktie",
+      "description": "Elevate your style with our Fitness Freak Necktie. Perfect for formal or casual occasions, adding a touch of sophistication to your look.",
+      "price": 11.99,
+      "category": 6,
+      "rating": 4.63,
+      "image_url": "/media/necktie-context.png",
+      "image": "necktie-context.png"
+    }
+  },
+  {
+    "pk": 41,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000041",
+      "name": "Protein Power (Apple)",
+      "description": "Fuel your workouts with our Fitness Freak Apple Protein Power. Packed with essential nutrients and delicious flavor to support your fitness goals.",
+      "price": 17.99,
+      "category": 5,
+      "rating": 4.50,
+      "image_url": "/media/protein-apple-context.png",
+      "image": "protein-apple-context.png"
+    }
+  },
+  {
+    "pk": 42,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000042",
+      "name": "Protein Power (Blackcurrant)",
+      "description": "Boost your energy levels with our Fitness Freak Blackcurrant Protein Power. Rich in antioxidants and flavor, it's the perfect pre- or post-workout supplement.",
+      "price": 17.99,
+      "category": 5,
+      "rating": 4.17,
+      "image_url": "/media/protein-blackcurrant-context.png",
+      "image": "protein-blackcurrant-context.png"
+    }
+  },
+  {
+    "pk": 43,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000043",
+      "name": "Protein Power (Blueberry)",
+      "description": "Support your active lifestyle with our Fitness Freak Blueberry Protein Power. Delicious and nutritious, it's the perfect addition to your daily routine.",
+      "price": 17.99,
+      "category": 5,
+      "rating": 4.66,
+      "image_url": "/media/protein-blueberry-context.png",
+      "image": "protein-blueberry-context.png"
+    }
+  },
+  {
+    "pk": 44,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000044",
+      "name": "Protein Power (Grape)",
+      "description": "Replenish your energy stores with our Fitness Freak Grape Protein Power. Refreshing and packed with nutrients, it's the perfect workout companion.",
+      "price": 17.99,
+      "category": 5,
+      "rating": 4.77,
+      "image_url": "/media/protein-grape-context.png",
+      "image": "protein-grape-context.png"
+    }
+  },
+  {
+    "pk": 45,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000045",
+      "name": "Protein Power (Lemon)",
+      "description": "Revitalize your body with our Fitness Freak Lemon Protein Power. Zesty and nutritious, it's the perfect way to fuel your workouts and recovery.",
+      "price": 17.99,
+      "category": 5,
+      "rating": 4.88,
+      "image_url": "/media/protein-lemon-context.png",
+      "image": "protein-lemon-context.png"
+    }
+  },
+  {
+    "pk": 46,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000046",
+      "name": "Protein Power (Orange)",
+      "description": "Boost your immune system with our Fitness Freak Orange Protein Power. Packed with vitamin C and flavor, it's the perfect way to support your active lifestyle.",
+      "price": 17.99,
+      "category": 5,
+      "rating": 4.50,
+      "image_url": "/media/protein-orange-context.png",
+      "image": "protein-orange-context.png"
+    }
+  },
+  {
+    "pk": 47,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000047",
+      "name": "Pyjama Bottom",
+      "description": "Relax and unwind in our Fitness Freak Pyjama Bottom. Soft and cozy, perfect for a comfortable night's sleep or lazy days at home.",
+      "price": 8.99,
+      "category": 2,
+      "rating": 4.56,
+      "image_url": "/media/pyjama-bottom-context.png",
+      "image": "pyjama-bottom-context.png"
+    }
+  },
+  {
+    "pk": 48,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000048",
+      "name": "Race Tanktop",
+      "description": "Achieve your personal best with our Fitness Freak Race Tanktop. Lightweight and breathable, designed for maximum performance during intense workouts.",
+      "price": 20.99,
+      "category": 1,
+      "rating": 4.08,
+      "image_url": "/media/race-tanktop-context.png",
+      "image": "race-tanktop-context.png"
+    }
+  },
+  {
+    "pk": 49,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000049",
+      "name": "Suitcase",
+      "description": "Travel in style with our Fitness Freak Suitcase. Durable and spacious, perfect for all your fitness essentials and travel gear.",
+      "price": 44.99,
+      "category": 6,
+      "rating": 4.49,
+      "image_url": "/media/suitcase-context.png",
+      "image": "suitcase-context.png"
+    }
+  },
+  {
+    "pk": 50,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000050",
+      "name": "Sweatshirt",
+      "description": "Stay warm and comfortable with our Fitness Freak Sweatshirt. Cozy and stylish, perfect for outdoor workouts or casual wear.",
+      "price": 27.99,
+      "category": 1,
+      "rating": 4.80,
+      "image_url": "/media/sweatshirt-context.png",
+      "image": "sweatshirt-context.png"
+    }
+  },
+  {
+    "pk": 51,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000051",
+      "name": "Swim Shorts",
+      "description": "Make a splash with our Fitness Freak Swim Shorts. Quick-drying and stylish, perfect for pool parties or beach workouts.",
+      "price": 15.99,
+      "category": 2,
+      "rating": 4.47,
+      "image_url": "/media/swim-shorts-context.png",
+      "image": "swim-shorts-context.png"
+    }
+  },
+  {
+    "pk": 52,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000052",
+      "name": "Watch Strap",
+      "description": "Upgrade your smartwatch with our Fitness Freak Watch Strap. Comfortable and stylish, perfect for tracking your fitness goals in style.",
+      "price": 28.99,
+      "category": 6,
+      "rating": 4.96,
+      "image_url": "/media/watch-strap-context.png",
+      "image": "watch-strap-context.png"
+    }
+  },
+  {
+    "pk": 53,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000053",
+      "name": "Wireless Charger",
+      "description": "Stay powered up with our Fitness Freak Wireless Charger. Fast and convenient, perfect for charging your devices while you focus on your workouts.",
+      "price": 19.99,
+      "category": 6,
+      "rating": 4.01,
+      "image_url": "/media/wireless-charger-context.png",
+      "image": "wireless-charger-context.png"
+    }
   }
 ]
