@@ -54,7 +54,6 @@ body {
 
 .nav-bar-background {
     background: #edcd1d !important;
-    /* color: green !important; */
 }
 
 #id_password, #id_login, #id_email, #id_email2, #id_username, 
@@ -92,6 +91,10 @@ ul {
 #id_description {
     height: 110px !important;
     overflow-y: auto;
+}
+
+#id_image {
+    height: 50px !important;
 }
 
 .fas:before {
@@ -287,6 +290,10 @@ a.category-badge > span.badge:hover {
         padding-top: 164px;
     }
 
+    .dropdown-padding .text-black, .ff-form-padding label {
+        padding-left: 50px;
+    }
+
     .mobile-header-btn , #mobile-fit-freak-nav {
         visibility: hidden;
         display: none;
@@ -300,7 +307,7 @@ a.category-badge > span.badge:hover {
     }
 
     .dropdown-padding .text-black, .ff-form-padding label {
-        padding-left: 20px;
+        padding-left: 30px;
     }
     
     #delivery-banner .bg-black, #delivery-banner .text-white {
