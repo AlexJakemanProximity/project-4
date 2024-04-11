@@ -70,6 +70,10 @@ body {
     margin: auto;
 }
 
+ul {
+    list-style-type: none;
+}
+
 #id_password:focus, #id_login:focus, #id_email:focus, #id_email2:focus, #id_username:focus, #id_password1:focus, #id_password2:focus {
     color: #edcd1d !important;
     background: #111;
