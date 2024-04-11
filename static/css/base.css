@@ -51,6 +51,20 @@ body {
     margin-top: 5px;
 }
 
+#id_password, #id_login {
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 12px;
+    outline: none;
+    background: #edcd1d;
+    color: #111;
+    border: 1px solid #111 !important;
+    transition: all .5s;
+    margin-bottom: 5px;
+    width: 70%;
+    margin: auto;
+}
+
 .basket-details-container {
     margin-bottom: 20px;
 }
@@ -254,6 +268,12 @@ a.category-badge > span.badge:hover {
 
     body {
         height: calc(100vh - 116px);
+    }
+}
+
+@media (min-width: 900px) {
+    .fit_freak_input {
+        width: 45% !important;
     }
 }
 
