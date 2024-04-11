@@ -329,7 +329,7 @@
       "name": "Babygrow",
       "description": "Keep your little one cozy and comfortable with our Fitness Freak Babygrow. Made from soft and breathable materials for all-day wear.",
       "price": 23.99,
-      "category": 1,
+      "category": 3,
       "rating": 4.73,
       "image_url": "/media/babygrow-context.png",
       "image": "babygrow-context.png"
@@ -385,7 +385,7 @@
       "name": "Bikini Set",
       "description": "Make a splash with our Fitness Freak Bikini Set. Matching top and bottom for a coordinated look, perfect for your next beach adventure.",
       "price": 19.99,
-      "category": 1,
+      "category": 3,
       "rating": 4.92,
       "image_url": "/media/bikini-set-context.png",
       "image": "bikini-set-context.png"
@@ -427,7 +427,7 @@
       "name": "Clothing Pin",
       "description": "Secure your workout gear with our Fitness Freak Clothing Pin. Durable and reliable, perfect for keeping everything in place during intense workouts.",
       "price": 23.99,
-      "category": 6,
+      "category": 3,
       "rating": 4.73,
       "image_url": "/media/clothing-pin-context.png",
       "image": "clothing-pin-context.png"
@@ -441,7 +441,7 @@
       "name": "Sport Coffee",
       "description": "Fuel your workouts with our Fitness Freak Sport Coffee. Specially blended for optimal performance, providing a natural energy boost without the crash.",
       "price": 32.99,
-      "category": 3,
+      "category": 6,
       "rating": 4.92,
       "image_url": "/media/coffee-context.png",
       "image": "coffee-context.png"
@@ -455,7 +455,7 @@
       "name": "Coffee Mug",
       "description": "Sip your favorite brew in style with our Fitness Freak Coffee Mug. Durable and insulated, perfect for keeping your drinks hot during chilly workouts.",
       "price": 8.99,
-      "category": 3,
+      "category": 6,
       "rating": 4.24,
       "image_url": "/media/coffee-mug-context.png",
       "image": "coffee-mug-context.png"
@@ -483,7 +483,7 @@
       "name": "Facemask",
       "description": "Stay protected during workouts with our Fitness Freak Facemask. Breathable and comfortable, perfect for indoor and outdoor exercise.",
       "price": 4.99,
-      "category": 1,
+      "category": 3,
       "rating": 4.06,
       "image_url": "/media/face-mask-context.png",
       "image": "face-mask-context.png"
@@ -497,7 +497,7 @@
       "name": "Light Scarf",
       "description": "Add a layer of warmth with our Fitness Freak Light Scarf. Soft and cozy, perfect for chilly outdoor workouts or casual wear.",
       "price": 12.99,
-      "category": 1,
+      "category": 3,
       "rating": 4.51,
       "image_url": "/media/light-scarf-context.png",
       "image": "light-scarf-context.png"
@@ -539,7 +539,7 @@
       "name": "Necktie",
       "description": "Elevate your style with our Fitness Freak Necktie. Perfect for formal or casual occasions, adding a touch of sophistication to your look.",
       "price": 11.99,
-      "category": 6,
+      "category": 3,
       "rating": 4.63,
       "image_url": "/media/necktie-context.png",
       "image": "necktie-context.png"

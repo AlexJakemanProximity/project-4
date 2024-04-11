@@ -298,7 +298,7 @@ a.category-badge > span.badge:hover {
         padding-top: 134px;
     }
 
-    .dropdown-padding .text-black {
+    .dropdown-padding .text-black, .ff-form-padding label {
         padding-left: 20px;
     }
     
@@ -355,5 +355,13 @@ a.category-badge > span.badge:hover {
 @media (max-width: 500px) {
     .col .my-1 {
         font-size: 85%;
+    }
+    
+    .quantity-width {
+        max-width: 28px !important;
+        text-align: center !important;
+    }
+    .quantity-update-width {
+        max-width: fit-content;
     }
 }
