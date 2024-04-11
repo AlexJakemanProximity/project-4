@@ -63,7 +63,7 @@
                         </thead>
                         <tbody>
                             {% for order in orders %}
-                                <tr>
+                                <tr class="saleline">
                                     <td>
                                         <a href="{% url 'order_history' order.order_number %}" 
                                         title="{{ order.order_number }}">
