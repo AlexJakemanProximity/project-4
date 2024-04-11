@@ -1,4 +1,5 @@
 import os
+import dj_database_url
 from pathlib import Path
 import allauth
 print(allauth.__file__)
@@ -14,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-4v=86d9@0gi9gbvk!7((z#e1$0m1a#p1s7*zs1)#(ptf$9rfq+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = []
 
@@ -108,6 +109,8 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 
 # Password validation
