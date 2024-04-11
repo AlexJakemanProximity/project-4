@@ -59,7 +59,8 @@ body {
 #id_password, #id_login, #id_email, #id_email2, #id_username, 
 #id_password1, #id_password2, #id_default_country, #id_default_phone_number, 
 #id_default_postcode, #id_default_town_or_city, #id_default_street_address1, 
-#id_default_street_address2, #id_default_county {
+#id_default_street_address2, #id_default_county, #id_category, #id_sku, #id_name, 
+#id_description, #id_has_sizes, #id_price, #id_rating, #id_image_url, #id_image {
     box-sizing: border-box;
     height: 40px;
     padding: 10px 12px;
@@ -80,9 +81,16 @@ ul {
 #id_password:focus, #id_login:focus, #id_email:focus, #id_email2:focus, #id_username:focus, #id_password1:focus, 
 #id_password2:focus, #id_default_country:focus, #id_default_phone_number:focus, 
 #id_default_postcode:focus, #id_default_town_or_city:focus, #id_default_street_address1:focus, 
-#id_default_street_address2:focus, #id_default_county:focus {
+#id_default_street_address2:focus, #id_default_county:focus, #id_catergory:focus, #id_sku:focus,
+#id_name:focus, #id_description:focus, #id_has_sizes:focus, #id_price:focus, #id_rating:focus, 
+#id_image_url:focus, #id_image:focus {
     color: #edcd1d !important;
     background: #111;
+}
+
+#id_description {
+    height: 110px !important;
+    overflow-y: auto;
 }
 
 .fas:before {
