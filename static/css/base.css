@@ -51,7 +51,12 @@ body {
     margin-top: 5px;
 }
 
-#id_password, #id_login {
+.nav-bar-background {
+    background: #edcd1d !important;
+    /* color: green !important; */
+}
+
+#id_password, #id_login, #id_email, #id_email2, #id_username, #id_password1, #id_password2 {
     box-sizing: border-box;
     height: 40px;
     padding: 10px 12px;
@@ -63,6 +68,10 @@ body {
     margin-bottom: 5px;
     width: 70%;
     margin: auto;
+}
+
+.fas:before {
+    color: #edcd1d;
 }
 
 .basket-details-container {
@@ -249,7 +258,7 @@ a.category-badge > span.badge:hover {
         left: 0;
         z-index: 1030;
     }
-    
+
     .header-container {
         padding-top: 164px;
     }
@@ -263,7 +272,27 @@ a.category-badge > span.badge:hover {
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 134px;
+    }
+
+    .dropdown-padding .text-black {
+        padding-left: 20px;
+    }
+    
+    #delivery-banner .bg-black, #delivery-banner .text-white {
+        color: #111 !important;
+        background: #fff !important;
+    }
+
+    .dropdown {
+        background-color: #fff !important;
+        border-radius: 5px;
+        margin-top: 2px;
+    }
+
+    #mobile-fit-freak-nav, .background-ff-yellow {
+        background: #111 !important;
+        color: #fff !important;
     }
 
     body {
@@ -295,7 +324,7 @@ a.category-badge > span.badge:hover {
     }
 
     .header-container {
-        padding-top: 145px;
+        padding-top: 162px;
     }
 }
 
