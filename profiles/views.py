@@ -24,7 +24,7 @@ def profile(request):
         form = UserProfileForm(instance=profile)
 
     form = UserProfileForm(instance=profile)
-    orders = profile.orders.all() # type: ignore
+    orders = profile.orders.all()  # type: ignore
 
     template = 'profiles/profile.html'
     context = {
@@ -34,6 +34,7 @@ def profile(request):
     }
 
     return render(request, template, context)
+
 
 def order_history(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)

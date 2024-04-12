@@ -1,3 +1,6 @@
 *.sqlite3
 *.pyc
 __pycache__
+.flake8
+.venv
+venv
