@@ -17,7 +17,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['fit-freak.herokuapp.com', 'localhost', 'http://localhost:8000', '.herokuapp.com']
+ALLOWED_HOSTS = ['fit-freak.herokuapp.com/', 'localhost', 'http://localhost:8000/', '.herokuapp.com/']
 
 # Application definition
 
@@ -165,6 +165,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 if 'USE_AWS' in os.environ:
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+    
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'fit-freak'
     AWS_S3_REGION_NAME = 'eu-north-1'
