@@ -32,7 +32,7 @@ body {
     min-width: 260px;
 }
 
-.btn-black, .btn-outline-black {
+.btn-black, .btn-outline-black, form[method="POST"][action="/accounts/password/reset/key/c-set-password/"] input {
     background: #111111 !important;
     color: #edcd1d !important;
     margin-bottom: 5px !important;
