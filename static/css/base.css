@@ -33,23 +33,17 @@ body {
 }
 
 .btn-black, .btn-outline-black {
-    background: #111111;
-    color: #edcd1d;
+    background: #111111 !important;
+    color: #edcd1d !important;
     margin-bottom: 5px !important;
 }
 
-.product-details-container, .basket-details-container, .allauth-form-inner-content {
+.product-details-container, .basket-details-container, form[method="POST"][action="/accounts/password/reset/key/c-set-password/"] {
     border: 2px solid #111111 !important;
     background: #fff !important;
     padding: 5px;
     padding-left: 10px;
     margin-top: 5px;
-}
-
-.allauth-form-inner-content form input {
-    background: #111111;
-    color: #edcd1d;
-    margin-bottom: 5px !important;
 }
 
 .nav-bar-background {
@@ -122,26 +116,14 @@ ul {
     border-bottom: 2px solid #111111 !important;
 }
 
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
-    background: black;
-    color: white !important;
-}
-
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus, .btn-outline-black:focus {
-    background: #edcd1d;
-    color: #111111;
-}
-
-.allauth-form-inner-content form input:focus {
-    background: #edcd1d;
-    color: #111111;
+    background: #edcd1d !important;
+    color: #111111 !important;
 }
 
 
