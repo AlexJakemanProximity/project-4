@@ -295,7 +295,7 @@ a.category-badge > span.badge:hover {
     }
 
     .dropdown-padding .text-black, .ff-form-padding label, .ff-form-padding {
-        padding-left: 40px !important;
+        padding-left: 50px;
     }
 
     .mobile-header-btn , #mobile-fit-freak-nav {
@@ -310,7 +310,7 @@ a.category-badge > span.badge:hover {
         padding-top: 134px;
     }
 
-    .dropdown-padding .text-black, .ff-form-padding, .ff-form-padding label {
+    .dropdown-padding .text-black, .ff-form-padding label, .ff-form-padding {
         padding-left: 30px;
     }
     

@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col basket-details-container">
                 <h5 class="text-muted text-center">Edit a Product</h5>
-                <form method="POST" action="{% url 'edit_product' product.id %}" class="form ff-form-padding text-center mb-2" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'edit_product' product.id %}" class="form text-center mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form | crispy }}
                     <div class="text-right">
