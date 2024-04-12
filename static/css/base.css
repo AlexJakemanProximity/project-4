@@ -36,7 +36,6 @@ body {
     background: #111111;
     color: #edcd1d;
     margin-bottom: 5px !important;
-    margin-top: 5px !important;
 }
 
 .btn-outline-black {
@@ -319,6 +318,10 @@ a.category-badge > span.badge:hover {
     #delivery-banner .bg-black, #delivery-banner .text-white {
         color: #111 !important;
         background: #fff !important;
+    }
+
+    .qty_input {
+        margin-bottom: 5px !important;
     }
 
     .dropdown {
