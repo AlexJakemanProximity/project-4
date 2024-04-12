@@ -66,13 +66,14 @@ Summary:
 
 ### Website Color Scheme
 
-- Main Background: #FFF (Body / Light Text)
-- Dark Accent: #343a40 (Navbar / Dark Contrast Elements)
-- Light Accent: #fed136 (Certain Titles / Accenting / Light Elements)
+- Main Background: #edcd1d (Body / Light Text)
+- Dark Accent: #111 (Navbar / Dark Contrast Elements)
+- Light Accent: #fff (Certain Titles / Accenting / Light Elements)
 
 ### Font
 
-We predominantly use the "Montserrat" font as it's big and bold, and helps to draw the end user in to the webapp.
+I predominantly use the "Lato" font as it's clear and easy to read for new customers. 
+The font is also asthetically pleasing and versatile when it comes to matching a simpler and sharper design like mine.
 
 ## Testing
 
@@ -82,11 +83,19 @@ We predominantly use the "Montserrat" font as it's big and bold, and helps to dr
 - Checked all CSS manually using the above site. 
 
 2. Python (https://extendsclass.com/python-tester.html)
-- Checked all Python code within the main.py file using the site above. 
+- Checked all Python code within the main.py file using the site above.
+
+3. Flake8 (https://flake8.pycqa.org/en/latest/)
+- Checked all local python files (
+    excluding any files within these folders since they're not in my control =
+    "migrations",
+    "__pycache__",
+    ".venv",
+    "venv"
+    )
 
 3. HTML (https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator)
-- There are no clear HTML errors within the project. Checked using W3C VS Code extension (https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator)
-- To confirm, I am aware of some errors in HTML validation for Django based HTML.
+- Checked using W3C VS Code extension (https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator)
 
 4. CSS (https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator)
 - There are no clear CSS errors within the project. Checked using W3C VS Code extension.
@@ -105,6 +114,7 @@ Desktop (Windows and macOS):
 Mobile (iOS and Android):
 - Safari (iOS)
 - Google Chrome (Android)
+To confirm, I only tested as low as 380px on mobile, since this is the lowest a generic device goes.
 
 ### Automated Testing
 Automated testing involves using tools and scripts to test the application automatically. This can include unit tests, integration tests, and end-to-end tests. Automated testing is beneficial for catching regressions and ensuring that the application functions as expected after code changes.
@@ -114,163 +124,192 @@ Manual testing is performed by human testers who interact with the application t
 
 ### User Stories
 
-#### Story 1: Navigation and Menu
+#### Story 1: Test Register Functionality
 
-Objective: Test the navigation functionality and menu responsiveness.
+- Registering: This test will be able to confirm whether the account register function works as expected.
 
-Steps:
+Steps:- 
+1. Open a web browser and navigate to https://fit-freak-e89ae93eb2ed.herokuapp.com/.
+2. Click on the "Register" button located at the top right corner of the homepage.
+3. Fill in the registration form with valid details including email, password, full name, etc.
+4. Click on the "Register" button to submit the form.
+5. Check the registered email inbox for a verification email.
+6. Open the verification email and click on the provided verification link.
+7. Verify that the account is successfully activated by logging in with the registered credentials.
 
-1. Expected Result: The HTML page opens in the web browser.
-- Actual Result: Confirmed, the page opens as expected.
-2. Expected Result: The navigation menu is visible.
-- Actual Result: Confirmed, the navigation menu is visible.
-3. Expected Result: Clicking the menu icon toggles the display of navigation links.
-- Actual Result: Confirmed, the navigation links appear/disappear when the menu icon is clicked.
-4. Expected Result: Clicking on each navigation link scrolls to the respective sections.
-- Actual Result: Confirmed, each link scrolls to the correct section.
-5. Expected Result: The menu adapts to different screen sizes upon resizing.
-- Actual Result: Confirmed, the menu is responsive to different screen sizes.
+Expected Result:-
+- The user should be able to register with their email address, as long as they've not signed up before.
 
-![Image of the navbar with an active title to assist the user with knowing where they are in the page from a Desktop user's perspective](/media/readme/story-one-active-navbar-title.png)
+![Image of the confirmation email](/media/readme/confirmation-email.png)
 
-#### Story 2: Term Submission Form
+#### Story 2: Test Login functionality
 
-Objective: Validate the functionality of the term submission form.
+- Logging in: This test will be able to confirm whether the account login function works as expected.
 
-Steps:
+Steps:-
+1. Open a web browser and navigate to https://fit-freak-e89ae93eb2ed.herokuapp.com/.
+2. Click on the "Login" button located at the top right corner of the homepage.
+3. Enter the registered email and password.
+4. Click on the "Login" button to submit the credentials.
+5. Verify that the user is successfully logged into the account.
 
-1. Expected Result: The "Submit a word / phrase" section is located on the page.
-- Actual Result: Confirmed, the section is present.
+Expected Result:-
+- The user should be able to login with their newly created account.
 
-2. Expected Result: Successfully submitting the form adds the term to the "Community Added Terms" section.
-- Actual Result: Confirmed, the term appears in the list upon successful submission.
+![Image of the a successful login toast confirmation](/media/readme/successful-login.png)
 
-3. Expected Result: Appropriate success or error messages are displayed.
-- Actual Result: Confirmed, success or error messages appear as expected.
+#### Story 3: Testing Product Sort Functionality
 
-![Image of the invalid input feedback from a Desktop user's perspective](/media/readme/invalid-input-feedback.png)
+- Sorting/Filtering: This test will be able to confirm whether the sort & filter functions work as expected.
 
-4. Expected Result: Submitting the form with invalid fields triggers appropriate error messages.
-- Actual Result: Confirmed, error messages appear for invalid fields.
+Steps:-
+1. Open a web browser and navigate to https://fit-freak-e89ae93eb2ed.herokuapp.com/.
+2. Select "All Products" from the navigation menu.
+3. Choose different categories such as "Clothing," "Equipment," and "Plans."
+4. Verify that each category displays a dropdown menu for sorting options.
+5. Select sorting options such as "Price: Low to High," "Price: High to Low," etc.
+6. Verify that the products are displayed according to the selected sorting option.
 
-![Image of the disabled Add Term button from a Desktop user's perspective](/static/assets/img/readme/disabled-add-term-btn.png)
+Expected Result:- 
+- When sorting and filtering by a specified option, the user should see the relevant data returned in the product results.
 
-5. Expected Result: The Add Term button should remain disabled until all fields are valid.
-- Actual Result: Confirmed, Add Term button is enabled only when all fields are filled with valid inputs.
+![Image of the product sort from high to low](/media/readme/product-filter-accessories-high-to-low.png)
 
-![Image of the enabled Add Term button from a Desktop user's perspective](/static/assets/img/readme/enabled-add-term-btn.png)
+#### Story 4: Updating Account Details
 
-6. Expected Result: The Live Term counter at the top of the page should increase by 1 upon successfully adding a term.
-- Actual Result: Confirmed, the Live Term counter does increase by 1.
+- Updating Account Info: This test will be able to confirm whether the update details function works as expected.
 
-![Image of the successful save banner from a Desktop user's perspective](/static/assets/img/readme/successful-save-banner.png)
+1. Open a web browser and navigate to https://fit-freak-e89ae93eb2ed.herokuapp.com/.
+2. Log in to your account on the website.
+3. Click on the "My Account" dropdown button and select "My Profile."
+4. Update any of the account details such as phone number, postal code, etc.
+5. Ensure that all required fields are filled.
+6. Select "Update Information" to save the changes.
+7. Verify that a successful toast message appears confirming the update.
 
-#### Story 3: Term Update and Delete
+Expected Result:- 
+- When editing the fields within the edit form, the user should see be only able to input relevant data and the save button should retain their details.
+
+![Image of the successful profile update toast.](/media/readme/successful-profile-detail-update.png)
+
+#### Story 5: Completing A Purchase
+
+- Adding a Product to Bag and Checkout:
+
+Steps:-
+1. Open a web browser and navigate to https://fit-freak-e89ae93eb2ed.herokuapp.com/.
+2. Search for a specific product (e.g., "swim shorts").
+3. Click on the desired product to view its details.
+4. Click on the "Add to Bag" button to add the product to the shopping bag.
+5. Navigate to the shopping bag by clicking on the shopping bag icon.
+6. Click on the "Checkout" button to proceed to the checkout page.
+7. Verify that the delivery details are pre-filled (if applicable).
+8. Fill out the required fields for name and card details including card number, expiry date, CVV, ZIP code, etc.
+9. Complete the checkout process by clicking on the "Place Order" or similar button.
+10. Verify that a successful toast message appears upon completing the payment.
+11. Check the registered email for an order confirmation email.
+
+![Image of the successful purchase](/media/readme/completed-payment-screen.png)
+
+#### Story 6: Order History
+
+- Checking Order History: This test will validate the order history form's functionality.
+
+Steps:-
+1. Open a web browser and navigate to https://fit-freak-e89ae93eb2ed.herokuapp.com/.
+2. Login to an account.
+3. Click on the "My Account" dropdown button and select "My Profile."
+4. Scroll down to find the "Order History" section.
+5. Verify that the correct items and order details are displayed.
+6. Click on the order ID
+7. Observe the correct data on the Order receipt (Delivery address, items, etc.)
+8. Observe the toast message (alert) that makes the user aware of this being a past order.
+
+![Image of the user's order-history](/media/readme/order-history.png)
+
+#### Story 7: Logout
+
+- Logging in: This test will be able to confirm whether the user logout function works as expected.
+
+Steps:-
+1. Open a web browser and navigate to https://fit-freak-e89ae93eb2ed.herokuapp.com/.
+2. Login to an account.
+3. Click on the "My Account" dropdown button.
+4. Select Logout.
+5. Observe "Are you sure?" screen.
+6. Select 'Sign Out'
+7. Observe the user is redirected to the homepage.
+8. Select 'My Account'
+9. Observe user is able to register or login.
+
+![Image of the successful logout, login button visible post logout.](/media/readme/login-button.png)
+
+#### Story 8: Forgot Password?
+
+- Logging in: This test will be able to confirm whether the password reset function works as expected.
+
+Steps:-
+1. Open a web browser and navigate to https://fit-freak-e89ae93eb2ed.herokuapp.com/.
+2. Click on the "My Account" dropdown button.
+3. Select Login.
+4. Select 'Forgot Password?'
+5. Input an email address for an existing account.
+6. Navigate to user's email
+7. Select Forgotten Password link within email
+8. Input new password
+9. Select 'Change password'
+10. Observe password changed confirmation. 
+
+![Image of the successful password change toast](/media/readme/toast-password-change.png)
+
+#### Story 8: Adding a Product
+
+- Logging in: This test will be able to confirm whether the add product form works.
+
+Steps:-
+1. Open a web browser and navigate to https://fit-freak-e89ae93eb2ed.herokuapp.com/.
+2. Click on the "My Account" dropdown button.
+3. Select Login.
+4. Login as an admin or staff member.
+5. Select My Account
+6. Select Product Management
+7. Fill out form with relevant data
+8. Choose an image file for the product
+9. Select 'Add Product'
+10. Observe Successful product added toast. 
+
+![Image of the successful product add toast](/media/readme/successful-add-product.png)
+
+#### Story 10: Negative Test Cases
 
 Objective: Confirm the update and delete functionality of the community-added terms.
 
-Steps:
+Examples:-
 
-1. Expected Result: The "COMMUNITY ADDED TERMS" section is present.
+1. 
+- Expected Result: Select
 - Actual Result: Confirmed, the section is present.
-2. Expected Result: Updating a term modifies the information in the "Community Added Terms" section.
+2. 
+- Expected Result: Updating a term modifies the information in the "Community Added Terms" section.
 - Actual Result: Confirmed, the term details are updated.
-3. Expected Result: Deleting a term removes it from the list.
+3. 
+- Expected Result: Deleting a term removes it from the list.
 - Actual Result: Confirmed, the term is removed upon deletion.
-4. Expected Result: Appropriate error messages are displayed for non-existent terms.
+4. 
+- Expected Result: Appropriate error messages are displayed for non-existent terms.
 - Actual Result: Confirmed, error messages appear for non-existent terms.
-5. Expected Result: The Live Term counter at the top of the page should not increase by 1 when successfully updating a term.
+5. 
+- Expected Result: The Live Term counter at the top of the page should not increase by 1 when successfully updating a term.
 - Actual Result: Confirmed, the Live Term counter does not increase by 1.
-6. Expected Result: The Live Term counter at the top of the page should decrease by 1 upon successfully deleting a term.
-- Actual Result: Confirmed, the Live Term counter does decrease by 1.
 
-![Image of the successful update banner from a Desktop user's perspective](/static/assets/img/readme/successful-update-banner.png)
-
-![Image of the successful delete banner from a Desktop user's perspective](/static/assets/img/readme/successful-delete-banner.png)
-
-#### Story 4: Modal Windows
-
-Objective: Test the content and functionality of modal windows (Privacy Policy and Terms of Use).
-
-Steps:
-
-1. Expected Result: Clicking on the "Privacy Policy" link opens the modal window.
-- Actual Result: Confirmed, the "Privacy Policy" modal window opens.
-
-2. Expected Result: Content within modal windows is clear and complete.
-- Actual Result: Confirmed, content is clear and complete.
-
-3. Expected Result: Closing modal windows using the keyboard or clicking outside works.
-- Actual Result: Confirmed, modal windows close as expected.
-
-4. Repeat steps for "Terms of Use" modal.
-
-![Image of the privacy policy modal from a Mobile user's perspective](/static/assets/img/readme/modal-privacy-policy.png)
-
-![Image of the terms of use modal from a Mobile user's perspective](/static/assets/img/readme/modal-terms-of-use.png)
-
-#### Story 5: Term Table Search
-
-Objective: Test the functionality of the term search feature.
-
-Steps:
-
-1. Expected Result: Searching for a term filters the table to display only relevant rows.
-- Actual Result: Confirmed, the table updates as expected.
-
-2. Expected Result: Clearing the search input restores the table to its original state.
-- Actual Result: Confirmed, the table returns to the original state.
-
-![Image of the terms of use modal from a Desktop user's perspective](/static/assets/img/readme/feature-terms-table-search.png)
-
-#### Story 6: Footer Links
-
-Objective: Verify the functionality of links in the footer.
-
-Steps:
-1. Expected Result: Clicking on each social media link opens in new tabs.
-- Actual Result: Confirmed, links open in new tabs.
-
-2. Expected Result: Clicking on "Privacy Policy" and "Terms of Use" opens the respective modal windows.
-- Actual Result: Confirmed, modal windows open as expected.
-
-#### Story 7: Data
-
-Objective: When updating on the front-end, data on the back-end should be amended to match the changes.
-
-Steps:
-1. Expected Result: Updating fields using the front-end Update modal form should update the back-end Google Sheet data.
-- Actual Result: Confirmed, the back-end data is correct.
-
-2. Expected Result: Updating fields using the front-end Delete button should update the back-end Google Sheet data.
-- Actual Result: Confirmed, the term is deleted in Google Sheets.
-
-![Image of the update modal in use from a Desktop user's perspective](/static/assets/img/readme/feature-update-modal-form.png)
-
-![Image of the Google Sheets matching data from a back-end perspective](/static/assets/img/readme/successful-update-google-sheet.png)
-
-#### Examples of Exploratory Testing for "Gamer Jargon"
-
-Open HTML Page:
-- Expected Result: HTML page opens in the web browser.
-- Actual Result: Confirmed, page opens as expected.
-
-Test Navigation, Submit a Term, and Term Update/Delete:
-- Follow the steps outlined in Stories 1, 2, and 3.
-
-Test Modal Windows, Term Table Search, and Footer Links:
-- Follow the steps outlined in Stories 4, 5, and 6.
+#### Examples of Exploratory Testing for "Fit Freak"
 
 Testing Responsiveness:
 - Expected Result: Page layout remains responsive depending on what kind or size of device you're using.
 - Actual Result: Confirmed, page layout is responsive.
 
-Check External socials Links:
-- Expected Result: External socials links open in new tabs.
-- Actual Result: Confirmed, socials links open in new tabs.
-
 Testing Scripts:
-- Expected Result: JavaScript functions without errors.
+- Expected Result: JavaScript functions without console errors.
 - Actual Result: Confirmed, no errors in the console.
 
 Testing Compatibility:
@@ -328,7 +367,7 @@ Automation Approach:
 
 ## Technologies Used
 
-Gamer Jargon uses the following technologies:
+Fit Freak uses the following technologies:
 
 - JavaScript: [Learn more about JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 - Python: [Learn more about Python](https://en.wikipedia.org/wiki/Python_(programming_language))
