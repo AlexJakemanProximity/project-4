@@ -192,6 +192,11 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
+.display-4 {
+    font-size: 3rem !important;
+    color: #111 !important;
+}
+
 .btt-link,
 .update-link,
 .remove-item {
