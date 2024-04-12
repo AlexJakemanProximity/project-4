@@ -52,24 +52,15 @@ Summary:
 - The toast messages vary depending on the response from the user's action. 
 
 ![Successful toast message](/media/readme/toast-message-mobile.png)
-![Warning toast message](/media/readme)
+![Warning toast message](/media/readme/toast-message-alert-mobile.png)
+![Error toast message](/media/readme/toast-message-error-mobile.png)
 
-#### Term Submission Form
-
-Summary:
-- The term submission form allows community users to add their own terms so that they can share with others. 
-
-![Image of the term submission form from a Desktop user's perspective](/media/readme/feature-term-submission-form.png)
-
-#### Footer
+#### Product Creation Form
 
 Summary:
-- The footer section includes links to the relevant social media sites for Gamer Jargon. 
-- The links will open to a new tab to allow easy navigation for the user.
-- The footer also houses the Privacy Policy and Terms Of Use links
+- The add product form allows store managers to add their own products. 
 
-![Image of the term submission form from a Desktop user's perspective](/media/readme/feature-footer.png)
-
+![Image of the product add page](/media/readme/product-add-page-mobile.png)
 
 ## Design
 
