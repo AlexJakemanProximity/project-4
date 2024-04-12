@@ -32,24 +32,24 @@ body {
     min-width: 260px;
 }
 
-.btn-black {
+.btn-black, .btn-outline-black {
     background: #111111;
     color: #edcd1d;
     margin-bottom: 5px !important;
 }
 
-.btn-outline-black {
-    background: white;
-    color: black !important;
-    border: 2px solid black;
-}
-
-.product-details-container, .basket-details-container {
+.product-details-container, .basket-details-container, .allauth-form-inner-content {
     border: 2px solid #111111 !important;
     background: #fff !important;
     padding: 5px;
     padding-left: 10px;
     margin-top: 5px;
+}
+
+.allauth-form-inner-content form input {
+    background: #111111;
+    color: #edcd1d;
+    margin-bottom: 5px !important;
 }
 
 .nav-bar-background {
@@ -134,10 +134,16 @@ ul {
 .shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
-.btn-black:focus {
+.btn-black:focus, .btn-outline-black:focus {
     background: #edcd1d;
     color: #111111;
 }
+
+.allauth-form-inner-content form input:focus {
+    background: #edcd1d;
+    color: #111111;
+}
+
 
 .text-yellow {
     color: #edcd1d !important;
