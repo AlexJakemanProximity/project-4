@@ -294,7 +294,7 @@ a.category-badge > span.badge:hover {
         padding-top: 164px;
     }
 
-    .dropdown-padding .text-black, .ff-form-padding label {
+    .dropdown-padding .text-black {
         padding-left: 50px;
     }
 

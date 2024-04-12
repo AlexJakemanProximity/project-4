@@ -262,7 +262,7 @@ Steps:-
 
 ![Image of the successful password change toast](/media/readme/toast-password-change.png)
 
-#### Story 8: Adding a Product
+#### Story 9: Adding a Product
 
 - Adding a new product: This test will be able to confirm whether the add product form works.
 
@@ -280,7 +280,43 @@ Steps:-
 
 ![Image of the successful product add toast](/media/readme/successful-add-product.png)
 
-#### Story 10: Negative Test Cases
+#### Story 10: Edit a product
+
+- Adding a new product: This test will be able to confirm whether the add product form works.
+
+Steps:-
+1. Open a web browser and navigate to https://fit-freak-e89ae93eb2ed.herokuapp.com/.
+2. Click on the "My Account" dropdown button.
+3. Select Login.
+4. Login as an admin or staff member.
+5. Search for a product
+6. Select edit
+7. Edit form fields
+8. Select Update Product
+9. Search for the recently edited product
+10. Observe updated product details
+
+![Image of a product being edited by an admin](/media/readme/edit-existing-product-as-admin.png)
+
+#### Story 11: Delete a product
+
+- Adding a new product: This test will be able to confirm whether the add product form works.
+
+Steps:-
+1. Open a web browser and navigate to https://fit-freak-e89ae93eb2ed.herokuapp.com/.
+2. Click on the "My Account" dropdown button.
+3. Select Login.
+4. Login as an admin or staff member.
+5. Search for a product
+6. Select a product
+7. Select delete
+8. Observe toast pop up
+9. Search for product
+10. Validate product no longer present
+
+![Image of the successful product add toast](/media/readme/delete-product-toast.png)
+
+#### Story 12: Negative Test Cases
 
 Objective: Confirming the negative cases are accounted for.
 
