@@ -84,10 +84,8 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        <div class="quantity-update-width">
-                                            <a class="update-link text-info"><small>Update</small></a>
-                                            <a class="remove-item text-danger" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
-                                        </div>
+                                        <a class="update-link text-info"><small>Update</small></a>
+                                        <a class="remove-item text-danger" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
@@ -145,25 +143,25 @@
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
 
-    <script type="text/javascript">
-        // Update quantity on click
-        $('.update-link').click(function(e) {
-            var form = $(this).prev('.update-form');
-            form.submit();
-        })
+<script type="text/javascript">
+    // Update quantity on click
+    $('.update-link').click(function(e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    })
 
-        // Remove item and reload on click
-        $('.remove-item').click(function(e) {
-            var csrfToken = "{{ csrf_token }}";
-            var itemId = $(this).attr('id').split('remove_')[1];
-            var size = $(this).data('product_size');
-            var url = `/bag/remove/${itemId}/`;
-            var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
+    // Remove item and reload on click
+    $('.remove-item').click(function(e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var size = $(this).data('product_size');
+        var url = `/bag/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
 
-            $.post(url, data)
-                .done(function() {
-                    location.reload();
-                });
-        })
-    </script>
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    })
+</script>
 {% endblock %}
