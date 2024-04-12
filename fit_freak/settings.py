@@ -113,9 +113,6 @@ else:
         }
     }
 
-ACCOUNT_EMAIL_VERIFICATION = 'none'
-
-
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
