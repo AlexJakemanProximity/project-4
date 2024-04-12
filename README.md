@@ -173,7 +173,7 @@ Steps:-
 Expected Result:- 
 - When sorting and filtering by a specified option, the user should see the relevant data returned in the product results.
 
-![Image of the product sort from high to low](/media/readme/product-filter-accessories-high-to-low.png)
+![Image of the product sort from high to low, and filtered accessories](/media/readme/product-filter-accessories-high-to-low.png)
 
 #### Story 4: Updating Account Details
 
@@ -246,7 +246,7 @@ Steps:-
 
 #### Story 8: Forgot Password?
 
-- Logging in: This test will be able to confirm whether the password reset function works as expected.
+- Forgot Password: This test will be able to confirm whether the password reset function works as expected.
 
 Steps:-
 1. Open a web browser and navigate to https://fit-freak-e89ae93eb2ed.herokuapp.com/.
@@ -264,7 +264,7 @@ Steps:-
 
 #### Story 8: Adding a Product
 
-- Logging in: This test will be able to confirm whether the add product form works.
+- Adding a new product: This test will be able to confirm whether the add product form works.
 
 Steps:-
 1. Open a web browser and navigate to https://fit-freak-e89ae93eb2ed.herokuapp.com/.
@@ -282,25 +282,34 @@ Steps:-
 
 #### Story 10: Negative Test Cases
 
-Objective: Confirm the update and delete functionality of the community-added terms.
+Objective: Confirming the negative cases are accounted for.
 
 Examples:-
 
-1. 
-- Expected Result: Select
-- Actual Result: Confirmed, the section is present.
-2. 
-- Expected Result: Updating a term modifies the information in the "Community Added Terms" section.
-- Actual Result: Confirmed, the term details are updated.
-3. 
-- Expected Result: Deleting a term removes it from the list.
-- Actual Result: Confirmed, the term is removed upon deletion.
-4. 
-- Expected Result: Appropriate error messages are displayed for non-existent terms.
-- Actual Result: Confirmed, error messages appear for non-existent terms.
-5. 
-- Expected Result: The Live Term counter at the top of the page should not increase by 1 when successfully updating a term.
-- Actual Result: Confirmed, the Live Term counter does not increase by 1.
+1. Registering an Account: Attempt to register with an already registered username.
+- Expected Result: An error will be thrown when attempting to do so.
+- Actual Result: Confirmed, an error was returned.
+![Image of the error after trying to use a taken username](/media/readme/username-error.png)
+
+2. Logging in: Use incorrect credentials and verify login failure.
+- Expected Result: An error will be thrown when attempting to do so.
+- Actual Result: Confirmed, an error was returned.
+![Image of the error after trying to login with the incorrect credentials](/media/readme/error-login.png)
+
+3. Register without required field: Leave a required field blank and attempt to register an account.
+- Expected Result: An error will be thrown when attempting to do so.
+- Actual Result: Confirmed, an error was returned.
+![Image of the error after trying to register an account without filling out required fields](/media/readme/field-validation.png)
+
+4. Adding Product to Bag and Checkout: Attempt to checkout with an expired card.
+- Expected Result: An error will be thrown when attempting to do so.
+- Actual Result: Confirmed, an error was returned.
+![Image of the error after trying to checkout with an expired card](/media/readme/expired-card-error.png)
+
+5. Adding Product to Bag and Checkout: Proceed to checkout without filling in any payment details.
+- Expected Result: An error will be thrown when attempting to do so.
+- Actual Result: Confirmed, an error was returned.
+![Image of the error when trying to checkout without inputting card details](/media/readme/expired-card-error.png)
 
 #### Examples of Exploratory Testing for "Fit Freak"
 
@@ -382,86 +391,118 @@ In this section, describe the data model designed for your project. You can incl
 
 ### Attributes:
 
-- Word (String)
-- Context (String)
-- Meaning (String)
-- Added_by (String)
-- Date (DateTime)
-- Id (Integer)
+#### Category Schema
+
+- pk = Primary key is a unique identifier for each record 
+- model = Type of Products object
+- name = Name used predominantly for code usage
+- friendly_name = Name for front-end customer view
+
+e.g.
+    <!-- {
+      "pk": 1,
+      "model": "products.category",
+      "fields": {
+        "name": "upper_body",
+        "friendly_name": "Upper Body"
+      } -->
 
 Here's an example entry in the dataset:
+![Image of the category schema in use](/media/readme/category_admin_example.png)
 
-- Word: Mod (Modification)
-- Context: Altered versions of a game created by players or developers to introduce new features or change existing ones.
-- Meaning: Customized content that modifies the original game.
-- Added_by: Luke Skywalker
-- Date: 02/07/2022 02:45:34
-- Id: 1111
+#### Product Schema
 
-![Image of the Google Sheets Data Model in use](/static/assets/img/readme/data-model-example.png)
+- pk = Primary key is a unique identifier for each record 
+- model = Type of Products object
+- sku = Stock Keeping Unit (A unique code assigned to each distinct product or item)
+- name = Name used predominantly for code usage
+- friendly_name = Name for front-end customer view
+- description = Defines the product / item
+- price = The cost of the item
+- category = Which family of products / items it belongs to
+- rating = A rating out of 5 by the end user of the product / item
+- image_url = A path for the product's image
+- image = The file name of the image
 
-### Google Sheets Implementation
+  <!-- {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "ff1000002",
+      "name": "Bucket Hat",
+      "description": "Stay cool and stylish with our Fitness Freak Bucket Hat. Perfect for outdoor workouts or casual wear. Made from durable materials to withstand any activity.",
+      "price": 14.99,
+      "category": 3,
+      "rating": 4.32,
+      "image_url": "/media/bucket-hat-context.png",
+      "image": "bucket-hat-context.png"
+    } -->
 
-Guide used: [Creating a Google Sheet](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LSND101+2021_T1/courseware/c05d81d784ad412498d09e2f3c081a9f/53fe80e254f8462884e3d526b3a95c5e/)
+Here's an example entry in the dataset:
+![Image of the product schema in use](/media/readme/product_admin_example.png)
 
-In this guide, I was assisted by Anna Greaves (CI Content Dev) via a video that is designed to help students setup and implement a Google Sheets based database using Google's Drive API. 
+#### User profile Schema
 
-#### Google Drive API Integration
+- user = The user that is associated with the delivery address
+- phone_number = The phone number of the user
+- post_code = Name used predominantly for code usage
+- town_or_city = The town or city the user lives in
+- street_adress1 / 2 = The street the user lives on
+- post_code = The post code of the user
+- county = The county of the user
+- country = The country of the user
 
-Implementation Details:
-The project utilizes the Google Drive API for storing and managing the dataset. Here's an overview of how it's integrated:
+Here's an example entry in the dataset:
+![Image of the user delivery details](/media/readme/delivery-data.png)
 
-- Google Sheets as a Database:
+### AWS S3
 
-The project uses Google Sheets as a database to store the dataset.
-Each entry in the dataset corresponds to a row in a Google Sheets document.
+Guide used: [Boutique Ado guide (CI)](https://learn.codeinstitute.net/ci_program/level5diplomainwebappdevelopment)
 
-- Google Drive API Integration:
+In this guide, I was assisted by Chris (CI Dev) via a video that is designed to help students setup and implement a AWS as a database.
 
-The Google Drive API is used to interact with the Google Sheets document programmatically.
-API requests are made to read, write, and update data within the Google Sheets document.
+#### AWS Integration:
 
-- Authentication and Authorization:
+- AWS Implementation:
 
-The project implements OAuth 2.0 for authentication and authorization to access the Google Drive API securely.
-Users need to authenticate themselves with their Google accounts to access and modify the dataset.
+1. Create an AWS S3 Bucket: Sign in to AWS Management Console, navigate to S3, and create a bucket.
+2. Upload Data to the Bucket: Upload your files to the S3 bucket using AWS Management Console or CLI.
+3. Permissions: Add a permission policy so that Heroku is able to interact freely.
+4. Set Up IAM Credentials: Create an IAM user with S3 permissions and get access keys.
+5. Configure Heroku: Set AWS credentials as environment variables.
+6. Access Data in Your Heroku App: Write code to interact with S3 using AWS SDK.
+7. Deploy Your Heroku App: Deploy your app to Heroku, ensuring correct environment variables.
+8. Testing and Monitoring: Test app functionality, monitor performance, and AWS usage.
 
-- Data Model:
-
-The data model remains consistent with the structure described earlier, but the storage medium is Google Sheets hosted on Google Drive.
 
 #### Benefits
 
-Utilizing Google Drive API for data storage offers several advantages:
-
-- Scalability: Google Sheets provide scalable storage, accommodating datasets of varying sizes.
-- Accessibility: Data stored in Google Sheets can be easily accessed and modified by authorized users from anywhere with an internet connection.
-- Integration: Integration with Google Drive API allows seamless interaction with the dataset, enabling functionalities like adding, updating, and querying data programmatically.
-- Usability: The database is designed for ease of use and accessibility. CRUD (Create, Read, Update, Delete) operations can be performed efficiently.
+- Scalability: Easily scale resources up or down based on demand.
+- Reliability: High availability with data centers in multiple regions.
+- Cost-effectiveness: Pay-as-you-go pricing model reduces upfront costs.
+- Security: Robust security measures and compliance certifications.
+- Global Reach: Deploy applications close to users worldwide.
+- Flexibility: Wide range of services for various workloads.
+- Ecosystem: Rich ecosystem of integrations and support resources.
 
 ## Frameworks, Libraries & Programs Used
 
-- Google Fonts https://fonts.google.com/specimen/Geo
-Google fonts were used to import the different fonts into the project.
-
-- Font Awesome (https://fontawesome.com/):
-Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-
-- GitHub (https://github.com/):
-GitHub is used to store the projects code after being pushed from Git.
-
-- Google Sheets (https://docs.google.com/spreadsheets)
-Google Sheets was integral to host the data for the webapp.
-
-- Start Bootstrap (https://startbootstrap.com/theme/agency)
-This theme assisted me with getting the UI for my page. 
+- AWS (aws.amazon.com)
+- ElephantSQL (https://www.elephantsql.com)
+- Spire (https://stripe.com/gb/payments)
+- Google Fonts (https://fonts.google.com/specimen/Lato)
+- Font Awesome (https://fontawesome.com/)
+- GitHub (https://github.com/)
+- Django (https://www.djangoproject.com)
+- Printify (https://printify.com/)
+- Heroku (https://dashboard.heroku.com)
 
 ## Deployment
 
 ### Heroku
 The project was deployed to Heroku following a guide from CodeInstitute.
-1. See CI link:
-- https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FL101+2021_T1/courseware/4d995e6a4f384c3dafffdcbde3fd25ef/c39056b888d74e8ca8576c6890651626/
+1. See CI link: (Boutique Ado)
+- https://learn.codeinstitute.net/ci_program/level5diplomainwebappdevelopment
 
 2. Live project link here:
 - https://fit-freak-e89ae93eb2ed.herokuapp.com/
