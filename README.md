@@ -12,7 +12,7 @@
 
 ## Description
 
-Welcome to Fit Freaks, the best place for your e-commerce gym-based needs!
+Welcome to Fit Freak, the best place for your e-commerce gym-based needs!
 
 ### Project Goal
 
@@ -494,7 +494,6 @@ In this guide, I was assisted by Chris (CI Dev) via a video that is designed to 
 - Font Awesome (https://fontawesome.com/)
 - GitHub (https://github.com/)
 - Django (https://www.djangoproject.com)
-- Printify (https://printify.com/)
 - Heroku (https://dashboard.heroku.com)
 
 ## Deployment
@@ -517,11 +516,12 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 ### Content
 
-- All text-based content was written by the developer.
+- Printify - Product designs (https://printify.com/)
+- All text-based content was written by the developer or generated generically by ChatGPT
 - Custom code written by developer
 - Hero image - (https://www.freepik.com/free-photo/fitness-stuff-grey-background_5162337.htm#from_view=detail_serie)
 - Bootstrap - Theme  / Components (https://getbootstrap.com/docs/4.6/getting-started/introduction/)
-- Fontawesome - (https://fontawesome.com)
+- Fontawesome - Icons (https://fontawesome.com)
 
 ### Acknowledgements
 
