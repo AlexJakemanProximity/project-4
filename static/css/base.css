@@ -41,9 +41,20 @@ body {
 .product-details-container, .basket-details-container, form[method="POST"][action="/accounts/password/reset/key/c-set-password/"] {
     border: 2px solid #111111 !important;
     background: #fff !important;
-    padding: 5px;
-    padding-left: 10px;
-    margin-top: 5px;
+    padding: 5px !important;
+    padding-left: 10px !important;
+    margin-top: 5px !important;
+}
+
+form[method="POST"][action="/accounts/password/reset/key/c-set-password/"] input {
+    text-align: center !important;
+    vertical-align: middle !important;
+    border: 1px solid transparent !important;
+    padding: .375rem .75rem !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    display: inline-block !important;
+    font-weight: 400 !important;
 }
 
 .nav-bar-background {
