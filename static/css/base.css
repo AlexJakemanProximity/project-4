@@ -32,23 +32,78 @@ body {
     min-width: 260px;
 }
 
-.btn-black {
-    background: #111111;
-    color: #edcd1d;
+.btn-black, .btn-outline-black, form[method="POST"][action="/accounts/password/reset/key/c-set-password/"] input {
+    background: #111111 !important;
+    color: #edcd1d !important;
+    margin-bottom: 5px !important;
 }
 
-.btn-outline-black {
-    background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 2px solid black;
-}
-
-.product-details-container, .basket-details-container {
+.product-details-container, .basket-details-container, form[method="POST"][action="/accounts/password/reset/key/c-set-password/"] {
     border: 2px solid #111111 !important;
     background: #fff !important;
-    padding: 5px;
-    padding-left: 10px;
-    margin-top: 5px;
+    padding: 5px !important;
+    padding-left: 10px !important;
+    margin-top: 5px !important;
+}
+
+form[method="POST"][action="/accounts/password/reset/key/c-set-password/"] input {
+    text-align: center !important;
+    vertical-align: middle !important;
+    border: 1px solid transparent !important;
+    padding: .375rem .75rem !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    display: inline-block !important;
+    font-weight: 400 !important;
+}
+
+.nav-bar-background {
+    background: #edcd1d !important;
+}
+
+#id_password, #id_login, #id_email, #id_email2, #id_username, 
+#id_password1, #id_password2, #id_default_country, #id_default_phone_number, 
+#id_default_postcode, #id_default_town_or_city, #id_default_street_address1, 
+#id_default_street_address2, #id_default_county, #id_category, #id_sku, #id_name, 
+#id_description, #id_has_sizes, #id_price, #id_rating, #id_image_url, #id_image {
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 12px;
+    outline: none;
+    background: #edcd1d;
+    color: #111;
+    border: 1px solid #111 !important;
+    transition: all .5s;
+    margin-bottom: 5px;
+    width: 90%;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#id_password:focus, #id_login:focus, #id_email:focus, #id_email2:focus, #id_username:focus, #id_password1:focus, 
+#id_password2:focus, #id_default_country:focus, #id_default_phone_number:focus, 
+#id_default_postcode:focus, #id_default_town_or_city:focus, #id_default_street_address1:focus, 
+#id_default_street_address2:focus, #id_default_county:focus, #id_catergory:focus, #id_sku:focus,
+#id_name:focus, #id_description:focus, #id_has_sizes:focus, #id_price:focus, #id_rating:focus, 
+#id_image_url:focus, #id_image:focus {
+    color: #edcd1d !important;
+    background: #111;
+}
+
+#id_description {
+    height: 110px !important;
+    overflow-y: auto;
+}
+
+#id_image {
+    height: 50px !important;
+}
+
+.fas:before {
+    color: #edcd1d;
 }
 
 .basket-details-container {
@@ -72,22 +127,16 @@ body {
     border-bottom: 2px solid #111111 !important;
 }
 
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
-    background: black;
-    color: white !important;
-}
-
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
-.btn-black:focus {
-    background: #edcd1d;
-    color: #111111;
+.btn-black:focus, .btn-outline-black:focus {
+    background: #edcd1d !important;
+    color: #111111 !important;
 }
+
 
 .text-yellow {
     color: #edcd1d !important;
@@ -140,6 +189,11 @@ a.category-badge > span.badge:hover {
     position: fixed;
     bottom: 10px;
     right: 10px;
+}
+
+.display-4 {
+    font-size: 3rem !important;
+    color: #111 !important;
 }
 
 .btt-link,
@@ -216,9 +270,14 @@ a.category-badge > span.badge:hover {
 /* Media queries */
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
+
+  .mobile-header-btn, #mobile-fit-freak-nav {
+    visibility: hidden;
+    display: none;
+    }
 }
 
 /* Fixed top navbar only on medium and up */
@@ -235,19 +294,54 @@ a.category-badge > span.badge:hover {
         padding-top: 164px;
     }
 
-    .mobile-header-btn {
+    .dropdown-padding .text-black, .ff-form-padding label, .ff-form-padding {
+        padding-left: 50px;
+    }
+
+    .mobile-header-btn , #mobile-fit-freak-nav {
         visibility: hidden;
+        display: none;
     }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 134px;
+    }
+
+    .dropdown-padding .text-black, .ff-form-padding label, .ff-form-padding {
+        padding-left: 30px;
+    }
+    
+    #delivery-banner .bg-black, #delivery-banner .text-white {
+        color: #111 !important;
+        background: #fff !important;
+    }
+
+    .qty_input {
+        margin-bottom: 5px !important;
+    }
+
+    .dropdown {
+        background-color: #fff !important;
+        border-radius: 5px;
+        margin-top: 2px;
+    }
+
+    #mobile-fit-freak-nav, .background-ff-yellow {
+        background: #111 !important;
+        color: #fff !important;
     }
 
     body {
         height: calc(100vh - 116px);
+    }
+}
+
+@media (min-width: 900px) {
+    .fit_freak_input {
+        width: 45% !important;
     }
 }
 
@@ -269,7 +363,7 @@ a.category-badge > span.badge:hover {
     }
 
     .header-container {
-        padding-top: 145px;
+        padding-top: 162px;
     }
 }
 
@@ -279,12 +373,11 @@ a.category-badge > span.badge:hover {
         font-size: 85%;
     }
     
-    /* .my-0 {
-        visibility: hidden;
-    } */
-
-    /* .list-inline-item {
-        max-width: 60px;
-        height: auto;
-    } */
+    .quantity-width {
+        max-width: 28px !important;
+        text-align: center !important;
+    }
+    .quantity-update-width {
+        max-width: fit-content;
+    }
 }

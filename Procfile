@@ -1,0 +1,1 @@
+web: gunicorn fit_freak.wsgi:application
